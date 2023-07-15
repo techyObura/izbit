@@ -1,0 +1,9 @@
+.missionS p a {
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.missionS p a:hover {
+  text-decoration: underline;
+}

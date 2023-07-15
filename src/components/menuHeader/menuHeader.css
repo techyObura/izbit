@@ -1,0 +1,66 @@
+.projectHeader {
+  display: none;
+}
+
+@media screen and (max-width: 798px) {
+  .outCover {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .menuElder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0.5rem;
+  }
+
+  .menuElder h3 {
+    flex: 9;
+    border-right: 1px solid grey;
+  }
+
+  .menuElder h3 a {
+    color: rgb(14, 5, 14);
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .openImage {
+    flex: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inCont {
+    background-color: rgb(87, 81, 81);
+    color: white;
+    display: none;
+  }
+
+  .inCont p {
+    margin-bottom: 0.7rem;
+    margin-left: 0.4rem;
+  }
+
+  .inCont p a {
+    color: white;
+    text-decoration: none;
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  .rotateMenuIcon {
+    transform: rotate(180deg);
+  }
+
+  .inContDisplay {
+    display: block;
+  }
+}

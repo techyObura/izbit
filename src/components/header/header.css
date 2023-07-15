@@ -1,0 +1,262 @@
+.header {
+  background-color: rgb(14, 5, 14);
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: yellow;
+}
+
+.menuContainer {
+  display: none;
+}
+
+.companyName {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+
+.logoContainer {
+  width: 40px;
+  height: 60px;
+  border: 2px solid yellow;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.onWorkContainer {
+  display: flex;
+  margin-right: 2rem;
+  position: relative;
+  justify-content: flex-end;
+  width: 800px;
+  height: 30px;
+}
+
+.searchArea {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 30px;
+  width: 0px;
+  opacity: 0;
+}
+
+.searchAreaOpacityOne {
+  width: 770px;
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+.searchText {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fbe106;
+  font-weight: 700;
+}
+
+.searchAreaContainer {
+  height: 29.7px;
+  background-color: white;
+  margin-left: 12px;
+  display: flex;
+  flex: 15;
+}
+
+.searchAreaContainer input {
+  flex: 9;
+  height: 29px;
+  border: none;
+  border-right: 1px solid gray;
+  line-height: 29px;
+  font-size: 16px;
+}
+
+.searchAreaContainer .selectContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.searchArea input:focus {
+  outline: none;
+}
+
+.goBox {
+  flex: 0.5;
+  width: 35px;
+  height: 30px;
+  border: #cebd27 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3px;
+  cursor: pointer;
+  margin-right: 3px;
+  background-color: white;
+}
+
+.onWorkList {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.onWorkListOpacity {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.onWorkList li {
+  list-style-type: none;
+}
+
+.onWorkList li a {
+  color: yellow;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.searchBtn {
+  color: yellow;
+  background-color: rgb(14, 5, 14);
+  cursor: pointer;
+  border: none;
+  transition: all 0.5s;
+}
+
+.searchBtnActive {
+  width: 30px;
+  height: 30px;
+  background-color: #fbe106;
+  color: #fbe106;
+  margin-left: 4px;
+  transition: all 0.5s;
+}
+.closeBtnContainer {
+  display: none;
+}
+
+@media screen and (max-width: 789px) {
+  .header {
+    background-color: rgb(14, 5, 14);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fbe106;
+    position: relative;
+  }
+
+  .menuContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #fbe106;
+    cursor: pointer;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fbe106;
+    transition-delay: 1s;
+    transition: all 1s;
+  }
+
+  .hamburger .line1,
+  .line2 {
+    width: 30px;
+    height: 4px;
+    background-color: rgb(14, 5, 14);
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+
+  .activeHamburger {
+    display: none;
+  }
+
+  .line1 {
+    margin-top: 0.9rem;
+    transform-origin: left;
+  }
+
+  .line2 {
+    transform-origin: left;
+  }
+
+  .menuWord {
+    color: rgb(14, 5, 14);
+  }
+
+  .activeMenuWord {
+    display: none;
+  }
+
+  .closeBtnContainer {
+    display: none;
+    transition: all 1s ease;
+    transition-delay: 1s;
+  }
+
+  .activeCloseBtnContainer {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+    background-color: #fbe106;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    transition-delay: 1s;
+  }
+  .closeBtn {
+    color: rgb(14, 5, 14);
+    transition: all 1s;
+  }
+
+  .companyName {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    justify-content: center;
+  }
+
+  .logoContainer {
+    width: 35px;
+    height: 40px;
+    border: 2px solid yellow;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+  }
+
+  .onWorkContainer {
+    display: flex;
+    margin-right: 2rem;
+    display: none;
+  }
+}

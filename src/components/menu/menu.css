@@ -1,0 +1,128 @@
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 798px) {
+  .menu {
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+    flex-direction: column;
+    right: 200vh;
+    position: relative;
+    transition: all 0.4s;
+  }
+
+  .menuActive {
+    right: 0;
+  }
+
+  .menuInnerContainer {
+    display: flex;
+    height: calc(100vh - 60px);
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .miniSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+    height: 50px;
+  }
+
+  .miniSearchContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 30px;
+  }
+
+  .conti {
+    display: flex;
+    flex: 11;
+    height: 30px;
+    background-color: white;
+    margin-left: 0.3rem;
+  }
+
+  .conti input {
+    flex: 9;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-right: 1px solid gray;
+    color: black;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  .conti input:focus {
+    outline: none;
+  }
+
+  .miniTech {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+
+  .miniSearchIcon {
+    flex: 0.5;
+    display: flex;
+    background-color: rgb(14, 5, 14);
+    height: 30px;
+    color: #fbe106;
+    margin-right: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .takeAction {
+    display: flex;
+    width: 100%;
+    height: 40px;
+  }
+
+  .giveBox {
+    flex: 0.5;
+    background-color: rgb(14, 5, 14);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .giveBox a {
+    color: white;
+    font-size: 18px;
+  }
+
+  .contactBox {
+    flex: 0.5;
+    background-color: #fbe106;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactBox a {
+    color: black;
+    font-size: 18px;
+  }
+
+  .itemLists {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
+}

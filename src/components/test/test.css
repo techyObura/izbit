@@ -1,0 +1,21 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  transition: all 1s ease;
+}
+
+.boxSize {
+  width: 300px;
+  height: 300px;
+  background: green;
+  transform: rotate(360deg);
+}
+
+.test {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
