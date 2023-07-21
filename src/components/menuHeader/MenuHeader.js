@@ -1,26 +1,11 @@
 import "./menuHeader.css";
 import { ArrowDropDown } from "@mui/icons-material";
 import React from "react";
+import MenuHeader2 from "../menuHeader2/MenuHeader2";
 
-const MenuHeader = ({
-  title,
-  active,
-  setSelected,
-  id,
-  open,
-  setOpen,
-  item1,
-  item2,
-  item3,
-  item4,
-  item5,
-  item6,
-  item7,
-  setOpenMenu,
-}) => {
+const MenuHeader = ({ title, active, setSelected, id, items, setOpenMenu }) => {
   const toggleButton = () => {
-    setSelected(id);
-    setOpen(!open);
+    setSelected(!active && id);
   };
   return (
     <div className="outCover">
@@ -29,34 +14,23 @@ const MenuHeader = ({
           <a href="f">{title}</a>
         </h3>
         <div
-          className={active && open ? "openImage rotateMenuIcon" : "openImage"}
+          className={active ? "openImage rotateMenuIcon" : "openImage"}
           onClick={toggleButton}
         >
           <ArrowDropDown style={{ fontSize: "56px" }} />
         </div>
       </div>
-      <div className={active && open ? "inCont inContDisplay" : "inCont"}>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item1}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item2}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item3}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item4}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item5}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item6}</a>
-        </p>
-        <p onClick={() => setOpenMenu(false)}>
-          <a href="y">{item7}</a>
-        </p>
+      <div className={active ? "inCont inContDisplay" : "inCont"}>
+        {items.map((item, index) => {
+          return (
+            <MenuHeader2
+              key={index}
+              item={item.item}
+              link={item.red}
+              setOpenMenu={setOpenMenu}
+            />
+          );
+        })}
       </div>
     </div>
   );

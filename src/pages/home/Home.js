@@ -1,4 +1,5 @@
 import HeaderHome from "../../components/headerHome/HeaderHome";
+import HeroSection from "../../components/homepage/heroSection/HeroSection";
 import SubH from "../../components/subH/SubH";
 
 import "./home.css";
@@ -9,6 +10,9 @@ const Home = () => {
     <div>
       <HeaderHome />
       <SubH />
+      <div className="homeSections">
+        <HeroSection />
+      </div>
     </div>
   );
 };

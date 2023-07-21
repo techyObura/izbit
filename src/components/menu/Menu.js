@@ -6,8 +6,7 @@ import { data } from "../../data";
 import { motion } from "framer-motion";
 
 const Menu = ({ openMenu, setOpenMenu }) => {
-  const [selected, setSelected] = useState(" ");
-  const [open, setOpen] = useState(false);
+  const [selected, setSelected] = useState(false && " ");
 
   return (
     <motion.div className={openMenu ? "menu menuActive" : "menu"}>
@@ -38,17 +37,9 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           {data.map((item) => {
             return (
               <MenuHeader
-                open={open}
-                setOpen={setOpen}
                 active={selected === item.id}
                 id={item.id}
-                item1={item.item1}
-                item2={item.item2}
-                item3={item.item3}
-                item4={item.item4}
-                item5={item.item5}
-                item6={item.item6}
-                item7={item.item7}
+                items={item.items}
                 setSelected={setSelected}
                 title={item.title}
                 setOpenMenu={setOpenMenu}

@@ -4,7 +4,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: yellow;
+  color: #fbe106;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .menuContainer {
@@ -22,7 +25,7 @@
 .logoContainer {
   width: 40px;
   height: 60px;
-  border: 2px solid yellow;
+  border: 2px solid #fbe106;
   justify-content: center;
   align-items: center;
   display: flex;

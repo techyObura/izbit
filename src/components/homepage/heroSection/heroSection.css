@@ -1,0 +1,29 @@
+.homepageHero {
+  width: 100%;
+}
+
+.heroPhoto {
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
+.heroPhoto img {
+  width: 100%;
+  height: 100%;
+}
+
+.heroQuote {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroQuote p {
+  font-size: 26px;
+  font-family: "roboto";
+  color: grey;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
+}
